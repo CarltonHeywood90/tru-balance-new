@@ -8,7 +8,7 @@ export default function AboutPage() {
       {/* Hero / Intro Section */}
       <section className="py-20 bg-stone-50">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-sans text-stone-900 mb-6">The Heart Behind <br/><span className="text-[#4e8d58] italic">Tru Balance</span></h1>
+          <h1 className="text-4xl md:text-6xl font-sans text-stone-900 mb-6">The Heart Behind <br/><span className="text-[#4e8d58] italic">TruBalance</span></h1>
           <p className="text-lg text-stone-600 leading-relaxed">
             Founded on the belief that true wellness comes from a balanced alignment of the physical body and the energetic spirit.
           </p>
