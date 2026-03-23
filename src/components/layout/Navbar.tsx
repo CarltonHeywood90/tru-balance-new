@@ -67,21 +67,34 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu Overlay */}
-      {/* This uses Tailwind transition classes to slide/fade the menu in */}
       <div className={`
-        fixed inset-0 top-32 bg-[#2c2f62] z-40 md:hidden transition-all duration-300 ease-in-out
-        ${isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-5'}
+        fixed top-0 left-0 w-full h-screen z-[100] md:hidden transition-all duration-300 ease-in-out
+        ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}
       `}>
-        <div className="flex flex-col items-center pt-12 space-y-8 text-xl font-bold uppercase tracking-[0.2em] text-white">
-          <Link href="/" onClick={closeMenu}>Home</Link>
-          <Link href="/services" onClick={closeMenu}>Services</Link>
-          <Link href="/about" onClick={closeMenu}>About</Link>
-          <Link href="/contact" onClick={closeMenu}>Contact</Link>
-          <Link href="/resources" onClick={closeMenu}>Resources</Link>
+        {/* 1. THE SOLID BACKDROP: This must be separate and absolute to cover the whole screen */}
+        <div className="absolute inset-0 bg-[#2c2f62] z-0" />
+
+        {/* 2. THE CLOSE BUTTON: Positioned at the top right so the user can always exit */}
+        <button 
+          onClick={closeMenu}
+          className="absolute top-10 right-8 text-white z-[110] p-2 hover:bg-white/10 rounded-full transition-colors"
+          aria-label="Close Menu"
+        >
+          <X size={32} />
+        </button>
+
+        {/* 3. THE LINKS: Wrapped in a relative div to sit ABOVE the backdrop */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full space-y-10 text-xl font-bold uppercase tracking-[0.2em] text-white">
+          <Link href="/" onClick={closeMenu} className="hover:text-[#4e8d58] transition-colors">Home</Link>
+          <Link href="/services" onClick={closeMenu} className="hover:text-[#4e8d58] transition-colors">Services</Link>
+          <Link href="/about" onClick={closeMenu} className="hover:text-[#4e8d58] transition-colors">About</Link>
+          <Link href="/contact" onClick={closeMenu} className="hover:text-[#4e8d58] transition-colors">Contact</Link>
+          <Link href="/resources" onClick={closeMenu} className="hover:text-[#4e8d58] transition-colors">Resources</Link>
+          
           <Link 
             href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
             onClick={closeMenu}
-            className="bg-[#4e8d58] px-10 py-4 rounded-full"
+            className="mt-4 bg-[#4e8d58] text-white px-12 py-5 rounded-full shadow-2xl active:scale-95 transition-all border border-white/10"
           >
             Book Now
           </Link>
