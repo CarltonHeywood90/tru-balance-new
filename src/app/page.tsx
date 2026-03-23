@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-white">
       {/* Hero Section */}
-      <main className="bg-blue-900 flex-grow flex flex-col items-center justify-center px-6 py-6 text-center">      
-        <h1 className="text-4xl md:text-6xl font-serif max-w-3xl leading-tight font-bold">
+      <main className="bg-[#2c2f62] flex-grow flex flex-col items-center justify-center px-6 py-6 text-center">      
+        <h1 className="text-4xl md:text-6xl font-sans max-w-3xl leading-tight font-bold">
           Your Wellness Journey <br /> 
-          <span className="italic text-lime-600">Starts Now</span>
+          <span className="italic text-[#4e8d58]">Starts Now</span>
         </h1>
         
         <p className="mt-6 text-lg text-white max-w-xl leading-relaxed">
@@ -22,7 +22,7 @@ export default function Home() {
           href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-lime-600 text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm"
+          className="bg-[#4e8d58] text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm"
         >
           Book Now
         </Link>
@@ -30,8 +30,8 @@ export default function Home() {
       </main>
 
     <div className="bg-white px-6 py-16 text-center">
-      <h2 className="text-4xl text-stone-800 mt-6 sm:mt-0">
-        Healing <span className="text-lime-600">Modalities</span>
+      <h2 className="text-4xl font-sans text-stone-800 mt-6 sm:mt-0">
+        Healing <span className="text-[#4e8d58]">Modalities</span>
       </h2>
 
       <p className="mt-4 text-xl text-stone-600 max-w-2xl leading-relaxed text-center mx-auto">
@@ -39,26 +39,26 @@ export default function Home() {
         </p>
     </div>  
 
-      <section className="py-20 bg-amber-400/45">
+      <section className="py-20 bg-[#d6ac4f]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             
             {/* Card 1: Therapeutic Massage */}
             <div className="bg-stone-50 p-8 rounded-2xl border border-black flex flex-col">
-              <h3 className="text-2xl font-serif mb-4 text-black">Therapeutic Massage</h3>
+              <h3 className="text-2xl font-sans mb-4 text-black">Therapeutic Massage</h3>
               <p className="text-stone-600 mb-8 flex-grow">
                 Classic relaxation massage using flowing strokes to effectively reduce stress and promote circulation.
               </p>
               <div className="mb-6">
                 <p className="text-sm font-medium text-stone-500 uppercase tracking-wider">Duration & Investment</p>
                 <p className="text-lg font-semibold text-stone-900">30 - 120 min</p>
-                <p className="text-xl font-bold text-lime-700">$50 - $185</p>
+                <p className="text-xl font-bold text-[#4e8d58]">$50 - $185</p>
               </div>
             <Link 
               href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-lime-600 text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm text-center"
+              className="bg-[#4e8d58] text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm text-center"
             >
               Book Your Session
             </Link>
@@ -66,44 +66,41 @@ export default function Home() {
 
             {/* Card 2: Reiki Energy Healing */}
             <div className="bg-stone-50 p-8 rounded-2xl border border-black flex flex-col">
-              <h3 className="text-2xl font-serif mb-4 text-black">Reiki Energy Healing</h3>
+              <h3 className="text-2xl font-sans mb-4 text-black">Reiki Energy Healing</h3>
               <p className="text-stone-600 mb-8 flex-grow">
                 Gentle energy work fosters balance and relaxation, promoting natural healing for mind, body, and spirit.
               </p>
               <div className="mb-6">
                 <p className="text-sm font-medium text-stone-500 uppercase tracking-wider">Duration & Investment</p>
                 <p className="text-lg font-semibold text-stone-900">30 - 60 min</p>
-                <p className="text-xl font-bold text-lime-700">$50 - $120</p>
+                <p className="text-xl font-bold text-[#4e8d58]">$50 - $95</p>
               </div>
             <Link 
               href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-lime-600 text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm text-center"
+              className="bg-[#4e8d58] text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm text-center"
             >
               Book Your Session
             </Link>
             </div>
 
-            {/* Card 3: TruBalance Alignment Session */}
+            {/* Card 3: Sports Massage */}
             <div className="bg-stone-50 p-8 rounded-2xl border border-black flex flex-col">
-              <div className="mb-2">
-                <span className="text-[10px] bg-lime-100 text-lime-800 px-2 py-0.5 rounded-full font-bold uppercase">Signature</span>
-              </div>
-              <h3 className="text-2xl font-serif mb-4 text-black">TruBalance Alignment</h3>
+              <h3 className="text-2xl font-sans mb-4 text-black">Sports Massage</h3>
               <p className="text-stone-600 mb-8 flex-grow">
-                Energy work that aligns your body and energy systems through a blend of intuitive techniques.
+                Targeted therapy for athletes and active individuals, focusing on muscle tension and recovery.
               </p>
               <div className="mb-6">
                 <p className="text-sm font-medium text-stone-500 uppercase tracking-wider">Duration & Investment</p>
                 <p className="text-lg font-semibold text-stone-900">60 min</p>
-                <p className="text-xl font-bold text-lime-700">$125</p>
+                <p className="text-xl font-bold text-[#4e8d58]">$50 - $140</p>
               </div>
             <Link 
               href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-lime-600 text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm text-center"
+              className="bg-[#4e8d58] text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm text-center"
             >
               Book Your Session
             </Link>
@@ -118,7 +115,7 @@ export default function Home() {
           
           {/* Column 1: Text Content */}
           <div className="text-left">
-            <h2 className="text-4xl font-serif text-stone-800">
+            <h2 className="text-4xl font-sans text-stone-800">
               Where Wellness Meets Luxury
             </h2>
             
@@ -144,7 +141,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-amber-400/45">
+      <section className="py-20 bg-[#d6ac4f]">
         <div className="max-w-6xl mx-auto px-6">
           {/* Grid Container: 1 column on mobile, 2 columns on desktop */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
@@ -152,7 +149,7 @@ export default function Home() {
             {/* Item 1: Natural & Organic */}
             <div className="flex flex-col">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-2 h-6 bg-lime-500 rounded-full" /> {/* Accent Bar */}
+                <div className="w-2 h-6 bg-[#4e8d58] rounded-full" /> {/* Accent Bar */}
                 <h3 className="text-xl font-bold text-stone-900">Natural & Organic</h3>
               </div>
               <p className="text-stone-600 leading-relaxed">
@@ -163,7 +160,7 @@ export default function Home() {
             {/* Item 2: Holistic Wellness */}
             <div className="flex flex-col">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-2 h-6 bg-lime-500 rounded-full" />
+                <div className="w-2 h-6 bg-[#4e8d58] rounded-full" />
                 <h3 className="text-xl font-bold text-stone-900">Holistic Wellness</h3>
               </div>
               <p className="text-stone-600 leading-relaxed">
@@ -174,7 +171,7 @@ export default function Home() {
             {/* Item 3: Transparent Pricing */}
             <div className="flex flex-col">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-2 h-6 bg-lime-500 rounded-full" />
+                <div className="w-2 h-6 bg-[#4e8d58] rounded-full" />
                 <h3 className="text-xl font-bold text-stone-900">Transparent Pricing</h3>
               </div>
               <p className="text-stone-600 leading-relaxed">
@@ -185,7 +182,7 @@ export default function Home() {
             {/* Item 4: Personalized Care */}
             <div className="flex flex-col">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-2 h-6 bg-lime-500 rounded-full" />
+                <div className="w-2 h-6 bg-[#4e8d58] rounded-full" />
                 <h3 className="text-xl font-bold text-stone-900">Personalized Care</h3>
               </div>
               <p className="text-stone-600 leading-relaxed">
@@ -199,8 +196,8 @@ export default function Home() {
 
       <section className="py-24 bg-stone-50">
         <div className="max-w-6xl mx-auto px-6 text-center mb-16">
-          <h1 className="text-4xl text-stone-800 mt-6 sm:mt-0 text-center">
-            Our <span className="text-lime-600">Values</span>
+          <h1 className="text-4xl font-sans text-stone-800 mt-6 sm:mt-0 text-center">
+            Our <span className="text-[#4e8d58]">Values</span>
           </h1>
 
           <p className="mt-4 text-lg text-stone-600 max-w-2xl leading-relaxed text-center mx-auto">
@@ -211,9 +208,9 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Card 1: Patient-Centered Care */}
-          <div className="bg-white p-10 rounded-3xl border border-stone-200 hover:border-lime-300 transition-all duration-300 shadow-sm hover:shadow-md group">
-            <div className="w-14 h-14 bg-lime-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-lime-500 transition-colors">
-              <span className="text-lime-700 group-hover:text-white text-xl font-bold">01</span>
+          <div className="bg-white p-10 rounded-3xl border border-stone-200 hover:border-[#4e8d58] transition-all duration-300 shadow-sm hover:shadow-md group">
+            <div className="w-14 h-14 bg-[#4e8d58] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#4e8d58] transition-colors">
+              <span className="text-white group-hover:text-[#2c2f62] text-xl font-bold">01</span>
             </div>
             <h3 className="text-xl font-bold text-stone-900 mb-4">Patient-Centered Care</h3>
             <p className="text-stone-600 leading-relaxed">
@@ -222,9 +219,9 @@ export default function Home() {
           </div>
 
           {/* Card 2: Evidence-Based Treatment */}
-          <div className="bg-white p-10 rounded-3xl border border-stone-200 hover:border-lime-300 transition-all duration-300 shadow-sm hover:shadow-md group">
-            <div className="w-14 h-14 bg-lime-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-lime-500 transition-colors">
-              <span className="text-lime-700 group-hover:text-white text-xl font-bold">02</span>
+          <div className="bg-white p-10 rounded-3xl border border-stone-200 hover:border-[#4e8d58] transition-all duration-300 shadow-sm hover:shadow-md group">
+            <div className="w-14 h-14 bg-[#4e8d58] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#4e8d58] transition-colors">
+              <span className="text-white group-hover:text-[#2c2f62] text-xl font-bold">02</span>
             </div>
             <h3 className="text-xl font-bold text-stone-900 mb-4">Evidence-Based Treatment</h3>
             <p className="text-stone-600 leading-relaxed">
@@ -233,9 +230,9 @@ export default function Home() {
           </div>
 
           {/* Card 3: Holistic Approach */}
-          <div className="bg-white p-10 rounded-3xl border border-stone-200 hover:border-lime-300 transition-all duration-300 shadow-sm hover:shadow-md group">
-            <div className="w-14 h-14 bg-lime-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-lime-500 transition-colors">
-              <span className="text-lime-700 group-hover:text-white text-xl font-bold">03</span>
+          <div className="bg-white p-10 rounded-3xl border border-stone-200 hover:border-[#4e8d58] transition-all duration-300 shadow-sm hover:shadow-md group">
+            <div className="w-14 h-14 bg-[#4e8d58] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#4e8d58] transition-colors">
+              <span className="text-white group-hover:text-[#2c2f62] text-xl font-bold">03</span>
             </div>
             <h3 className="text-xl font-bold text-stone-900 mb-4">Holistic Approach</h3>
             <p className="text-stone-600 leading-relaxed">
@@ -246,17 +243,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 bg-amber-400/45">
+      <section className="py-24 bg-[#d6ac4f]">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
           
           {/* Column 1: Clinic Location & Hours */}
           <div className="bg-stone-50 p-10 rounded-3xl border border-stone-100">
-            <h2 className="text-3xl font-serif text-stone-900 mb-8">Visit Our Clinic</h2>
+            <h2 className="text-3xl font-sans text-stone-900 mb-8">Visit Our Clinic</h2>
             
             <div className="space-y-8">
               {/* Address */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-widest text-lime-700 mb-2">Location</h3>
+                <h3 className="text-sm font-bold uppercase tracking-widest text-[#4e8d58] mb-2">Location</h3>
                 <p className="text-lg text-stone-800 leading-tight">
                   388 W Center St<br />
                   Orem, UT 84057<br />
@@ -266,7 +263,7 @@ export default function Home() {
 
               {/* Hours */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-widest text-lime-700 mb-4">Hours</h3>
+                <h3 className="text-sm font-bold uppercase tracking-widest text-[#4e8d58] mb-4">Hours</h3>
                 <ul className="space-y-2 text-stone-700">
                   <li className="flex justify-between border-b border-stone-200 pb-1"><span>Monday</span> <span className="font-medium">10:30 AM - 5:00 PM</span></li>
                   <li className="flex justify-between border-b border-stone-200 pb-1 text-stone-400"><span>Tuesday</span> <span>Closed</span></li>
@@ -283,7 +280,7 @@ export default function Home() {
                 href="https://www.google.com/maps/search/?api=1&query=388+W+Center+St+Orem+UT+84057"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block w-full text-center bg-lime-600 text-white py-4 rounded-xl font-bold hover:bg-lime-700 transition-all shadow-md shadow-lime-100"
+                className="inline-block w-full text-center bg-[#4e8d58] text-white py-4 rounded-xl font-bold hover:bg-[#4e8d58] transition-all shadow-md shadow-[#4e8d58]"
               >
                 Get Directions
               </a>
@@ -292,12 +289,12 @@ export default function Home() {
 
           {/* Column 2: What to Expect */}
           <div className="flex flex-col justify-center">
-            <h2 className="text-3xl font-serif text-stone-900 mb-8">What to Expect</h2>
+            <h2 className="text-3xl font-sans text-stone-900 mb-8">What to Expect</h2>
             
             <div className="space-y-10">
               {/* Step 1 */}
               <div className="flex gap-6">
-                <div className="flex-shrink-0 w-10 h-10 bg-lime-100 text-lime-700 rounded-full flex items-center justify-center font-bold">1</div>
+                <div className="flex-shrink-0 w-10 h-10 bg-[#4e8d58] text-white rounded-full flex items-center justify-center font-bold">1</div>
                 <div>
                   <h4 className="text-xl font-bold text-stone-900 mb-2">Your First Visit</h4>
                   <p className="text-stone-600 leading-relaxed">
@@ -308,7 +305,7 @@ export default function Home() {
 
               {/* Step 2 */}
               <div className="flex gap-6">
-                <div className="flex-shrink-0 w-10 h-10 bg-lime-100 text-lime-700 rounded-full flex items-center justify-center font-bold">2</div>
+                <div className="flex-shrink-0 w-10 h-10 bg-[#4e8d58] text-white rounded-full flex items-center justify-center font-bold">2</div>
                 <div>
                   <h4 className="text-xl font-bold text-stone-900 mb-2">Treatment Plans</h4>
                   <p className="text-stone-600 leading-relaxed">
@@ -319,7 +316,7 @@ export default function Home() {
 
               {/* Step 3 */}
               <div className="flex gap-6">
-                <div className="flex-shrink-0 w-10 h-10 bg-lime-100 text-lime-700 rounded-full flex items-center justify-center font-bold">3</div>
+                <div className="flex-shrink-0 w-10 h-10 bg-[#4e8d58] text-white rounded-full flex items-center justify-center font-bold">3</div>
                 <div>
                   <h4 className="text-xl font-bold text-stone-900 mb-2">Follow-up Care</h4>
                   <p className="text-stone-600 leading-relaxed">
@@ -333,8 +330,8 @@ export default function Home() {
         </div>
       </section>
 
-      <h2 className="bg-white text-4xl text-stone-800 text-center py-4">
-        Ready to Begin Your <span className="text-lime-600">Healing Journey?</span>
+      <h2 className="bg-white font-sans text-4xl text-stone-800 text-center py-4">
+        Ready to Begin Your <span className="text-[#4e8d58]">Healing Journey?</span>
       </h2>
 
       <p className="bg-white text-lg text-stone-600 text-center px-4 py-4">
@@ -350,7 +347,7 @@ export default function Home() {
             href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-lime-600 text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm text-center"
+            className="bg-[#4e8d58] text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm text-center"
           >
             Book Now
           </Link>
@@ -359,3 +356,6 @@ export default function Home() {
     </div>
   );
 }
+
+
+

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 bg-blue-900 backdrop-blur-md ">
+    <nav className="sticky top-0 z-50 bg-[#2c2f62] backdrop-blur-md ">
       <div className="max-w-6xl mx-auto px-6 h-40 flex justify-between items-center">
         <Link href="/" className="font-bold text-xl tracking-tighter text-stone-900">
           {/* Import image logo here if you have one, otherwise just use text */}
@@ -17,7 +17,13 @@ export default function Navbar() {
           />
         </Link>
 
-        <h1 className="text-7xl text-white font-bold font-serif tracking-wide">Tru<span className='text-lime-500'>Balance</span></h1>
+        <Image
+          src="/images/TruBalance-Wordmark-01.PNG"
+          alt="Tru Balance Wordmark"
+          width={300}
+          height={87}
+          className="hidden md:block"
+        />
         
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-10 text-sm font-medium text-white">
@@ -25,18 +31,19 @@ export default function Navbar() {
           <Link href="/services" className="hover:text-black transition-colors">Services</Link>
           <Link href="/about" className="hover:text-black transition-colors">About</Link>
           <Link href="/contact" className="hover:text-black transition-colors">Contact</Link>
+          <Link href="/resources" className="hover:text-black transition-colors">Resources</Link>
           <Link 
             href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-lime-600 text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm"
+            className="bg-[#4e8d58] text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm"
           >
             Book Now
           </Link>
         </div>
 
         {/* Mobile Menu Icon */}
-        <button className="md:hidden text-lime-600">
+        <button className="md:hidden text-[#4e8d58]">
           <Menu size={24} />
         </button>
       </div>

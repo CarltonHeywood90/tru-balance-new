@@ -7,11 +7,11 @@ export default function ContactPage() {
       {/* Header */}
       <section className="py-20 border-b border-stone-100 bg-stone-50/50">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100 border border-purple-200 text-purple-900 text-sm mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2c2f62] border border-[#2c2f62] text-white text-sm mb-6">
             <Sparkles size={14} />
             <span>Get In Touch</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-serif mb-6 text-stone-900">Clinic Information</h1>
+          <h1 className="text-5xl md:text-7xl font-sans mb-6 text-stone-900">Clinic Information</h1>
           <p className="text-xl text-stone-600">
           We're conveniently located on center street with easy access to parking and public transportation.
           </p>
@@ -24,11 +24,11 @@ export default function ContactPage() {
           
           {/* TOP LEFT: Location & Hours */}
           <div className="space-y-10 p-4">
-            <h2 className="text-3xl font-serif text-lime-600">Visit Our Clinic</h2>
+            <h2 className="text-3xl font-sans text-[#4e8d58]">Visit Our Clinic</h2>
             
             <div className="space-y-8">
               <div className="flex items-start">
-                <div className="w-12 h-12 bg-purple-900 rounded-2xl flex items-center justify-center mr-4 shrink-0 text-purple-100 shadow-sm">
+                <div className="w-12 h-12 bg-[#2c2f62] rounded-2xl flex items-center justify-center mr-4 shrink-0 text-white shadow-sm">
                   <MapPin size={24} />
                 </div>
                 <div>
@@ -39,7 +39,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start">
-                <div className="w-12 h-12 bg-purple-900 rounded-2xl flex items-center justify-center mr-4 shrink-0 text-purple-100 shadow-sm">
+                <div className="w-12 h-12 bg-[#2c2f62] rounded-2xl flex items-center justify-center mr-4 shrink-0 text-white shadow-sm">
                   <Clock size={24} />
                 </div>
                 <div className="w-full max-w-sm">
@@ -57,7 +57,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start">
-                <div className="w-12 h-12 bg-purple-900 rounded-2xl flex items-center justify-center mr-4 shrink-0 text-purple-100 shadow-sm">
+                <div className="w-12 h-12 bg-[#2c2f62] rounded-2xl flex items-center justify-center mr-4 shrink-0 text-white shadow-sm">
                   <Mail size={24} />
                 </div>
                 <div>
@@ -84,10 +84,10 @@ export default function ContactPage() {
           </div>
 
           {/* BOTTOM LEFT: Booking Portal */}
-          <div className="bg-purple-900 p-8 md:p-10 rounded-3xl border border-purple-950 flex flex-col justify-between shadow-lg">
+          <div className="bg-[#2c2f62] p-8 md:p-10 rounded-3xl border border-[#2c2f62] flex flex-col justify-between shadow-lg">
             <div>
-              <h3 className="text-2xl font-serif text-white mb-4">Ready to book?</h3>
-              <p className="text-purple-100/70 mb-8 leading-relaxed">
+              <h3 className="text-2xl font-sans text-white mb-4">Ready to book?</h3>
+              <p className="text-white mb-8 leading-relaxed">
                 The fastest way to secure your session is through our online booking portal. View all available times and services in one place.
               </p>
             </div>
@@ -95,39 +95,36 @@ export default function ContactPage() {
           href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-lime-600 text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm text-center"
+          className="bg-[#4e8d58] text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm text-center"
         >
           Book An Appointment Now!
         </Link>
           </div>
 
           {/* BOTTOM RIGHT: Important Info */}
-          <div className="bg-stone-900 rounded-3xl border border-stone-800 p-8 md:p-10 shadow-2xl relative overflow-hidden">
-            <div className="absolute -top-12 -right-12 w-32 h-32 bg-purple-900/30 blur-3xl rounded-full" />
-            <div className="relative z-10">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-purple-900 rounded-xl flex items-center justify-center text-purple-200">!</div>
-                <h3 className="text-2xl font-serif text-lime-500">Important Info</h3>
-              </div>
+          <div className="bg-[#d6ac4f] rounded-3xl border border-stone-800 p-8 md:p-10">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 bg-[#2c2f62] rounded-xl flex items-center justify-center text-white">!</div>
+              <h3 className="text-2xl font-sans text-[#4e8d58]">Important Info</h3>
+            </div>
               <ul className="space-y-4">
-                <li className="flex gap-3 text-sm text-stone-300">
-                  <div className="w-1.5 h-1.5 rounded-full bg-lime-500 mt-1.5 shrink-0" />
+                <li className="flex gap-3 text-sm text-white">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#4e8d58] mt-1.5 shrink-0" />
                   <span>Arrive <strong className="text-white font-semibold">5–10 minutes early</strong> for your session.</span>
                 </li>
-                <li className="flex gap-3 text-sm text-stone-300">
-                  <div className="w-1.5 h-1.5 rounded-full bg-lime-500 mt-1.5 shrink-0" />
+                <li className="flex gap-3 text-sm text-white">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#4e8d58] mt-1.5 shrink-0" />
                   <span><strong className="text-white font-semibold">Hydrate</strong> after your massage to aid recovery.</span>
                 </li>
-                <li className="flex gap-3 text-sm text-stone-300">
-                  <div className="w-1.5 h-1.5 rounded-full bg-lime-500 mt-1.5 shrink-0" />
+                <li className="flex gap-3 text-sm text-white">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#4e8d58] mt-1.5 shrink-0" />
                   <span>Share any <strong className="text-white font-semibold">health concerns</strong> beforehand.</span>
                 </li>
-                <li className="flex gap-3 text-sm text-stone-300">
-                  <div className="w-1.5 h-1.5 rounded-full bg-lime-500 mt-1.5 shrink-0" />
-                  <span>Review our <strong className="text-white underline underline-offset-4 decoration-lime-500/50">cancellation policy</strong>.</span>
+                <li className="flex gap-3 text-sm text-white">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#4e8d58] mt-1.5 shrink-0" />
+                  <span>Review our <strong className="text-white underline underline-offset-4 decoration-[#4e8d58]/50">cancellation policy</strong>.</span>
                 </li>
               </ul>
-            </div>
           </div>
 
         </div>
@@ -137,51 +134,51 @@ export default function ContactPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
         
         {/* Parking Information Card */}
-        <div className="p-8 bg-stone-50 rounded-3xl border border-stone-200 shadow-sm transition-all hover:border-purple-200 py-6">
+        <div className="p-8 bg-stone-50 rounded-3xl border border-stone-200 shadow-sm transition-all hover:border-[#2c2f62] py-6">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 bg-purple-900 rounded-xl flex items-center justify-center text-purple-100">
+            <div className="w-10 h-10 bg-[#2c2f62] rounded-xl flex items-center justify-center text-white">
               <MapPin size={20} />
             </div>
-            <h3 className="text-2xl font-serif text-blue-900">Parking Information</h3>
+            <h3 className="text-2xl font-sans text-[#2c2f62]">Parking Information</h3>
           </div>
           
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
-              <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-lime-500 shrink-0" />
-              <p className="text-stone-700 font-medium">Free parking available</p>
+              <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#4e8d58] shrink-0" />
+              <p className="text-[#2c2f62] font-medium">Free parking available</p>
             </li>
             <li className="flex items-start gap-3">
-              <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-lime-500 shrink-0" />
+              <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#4e8d58] shrink-0" />
               <p className="text-stone-600">
-                Park near <span className="text-stone-900 font-semibold">Etherios Therapy entrance</span> (north west)
+                Park near <span className="text-[#2c2f62] font-semibold">Etherios Therapy entrance</span> (north west)
               </p>
             </li>
             <li className="flex items-start gap-3">
-              <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-lime-500 shrink-0" />
+              <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#4e8d58] shrink-0" />
               <p className="text-stone-600 text-sm">Accessible parking spaces available near all entrances</p>
             </li>
           </ul>
         </div>
 
         {/* Public Transportation Card */}
-        <div className="p-8 bg-stone-50 rounded-3xl border border-stone-200 shadow-sm transition-all hover:border-purple-200 py-6">
+        <div className="p-8 bg-stone-50 rounded-3xl border border-stone-200 shadow-sm transition-all hover:border-[#2c2f62] py-6">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 bg-purple-900 rounded-xl flex items-center justify-center text-purple-100">
+            <div className="w-10 h-10 bg-[#2c2f62] rounded-xl flex items-center justify-center text-white">
               <Clock size={20} />
             </div>
-            <h3 className="text-2xl font-serif text-blue-900">Public Transportation</h3>
+            <h3 className="text-2xl font-sans text-[#2c2f62]">Public Transportation</h3>
           </div>
           
           <div className="space-y-6">
             <div>
-              <h4 className="text-xs font-bold uppercase tracking-widest text-purple-900 mb-2">Frontrunner</h4>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[#2c2f62] mb-2">Frontrunner</h4>
               <p className="text-stone-700 text-sm leading-relaxed">
                 Provo Central Station (Bay B) — <span className="font-semibold text-stone-900">1 min walk</span>
               </p>
             </div>
 
             <div>
-              <h4 className="text-xs font-bold uppercase tracking-widest text-purple-900 mb-2">Bus Route 850</h4>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[#2c2f62] mb-2">Bus Route 850</h4>
               <p className="text-stone-700 text-sm leading-relaxed">
                 Lehi Station, 31 stops to State St / Center St (NB) — <span className="font-semibold text-stone-900">13 min walk</span>
               </p>
@@ -199,3 +196,5 @@ export default function ContactPage() {
     </div>
   );
 }
+
+

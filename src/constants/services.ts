@@ -1,25 +1,33 @@
 // src/constants/services.ts
-export const SERVICES = [
+export type Service = {
+  slug: string;
+  title: string;
+  duration: string;
+  price: string;
+  description: string;
+};
+
+export const SERVICES: Service[] = [
   {
     slug: 'therapeutic-massage', // This must match the URL exactly
     title: 'Therapeutic Massage',
-    duration: '60 min',
-    price: '$85',
+    duration: '30 min / 60 min / 90 min / 120 min',
+    price: '$50 - $185',
     description: 'Deep tissue and Swedish techniques tailored to relieve chronic tension and improve circulation.',
     // ... any other fields
   },
   {
     slug: 'reiki-energy-work',
     title: 'Reiki Energy Work',
-    duration: '60 min',
-    price: '$75',
+    duration: '30 min / 60 min',
+    price: '$50 - $95',
     description: 'A non-invasive energy healing practice that promotes stress reduction and relaxation.',
   },
   {
-    slug: 'postural-alignment',
-    title: 'Postural Alignment',
-    duration: '75 min',
-    price: '$95',
-    description: 'Focused sessions designed to correct imbalances in the body.',
+    slug: 'sports-massage',
+    title: 'Sports Massage',
+    duration: '30 min / 60 min / 90 min',
+    price: '$50 - $125',
+    description: 'Targeted therapy for athletes and active individuals to enhance performance and recovery.',
   }
 ];
